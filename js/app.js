@@ -17,14 +17,12 @@ function adicionar() {
     
     let preco = quantidade * valorUnitario;
 
-    
     //adicionar no carrinho.
 
     let carrinho = document.getElementById("lista-produtos");
     carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
           <span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${preco}</span>
         </section>`
-
 
     //atualizar o valor total da compra.
 
@@ -33,11 +31,7 @@ function adicionar() {
     campoTotal.textContent = `R$${totalGeral}`
     document.getElementById("quantidade").value = 0;
     
-
-
 }
-
-
 
 function limpar() {
     totalGeral = 0
